@@ -1,0 +1,220 @@
+@charset "UTF-8";
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #FFF8ED;
+  color: #000;
+  font-family: "Kiwi Maru", serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background: #B8DCEF;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 20px 15px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+header > p {
+  width: 100%;
+}
+header > p > .product__detail {
+  position: relative;
+  display: inline-block;
+  font-size: 1.8rem;
+  color: #fff;
+  padding-left: 34px;
+}
+header > p::before {
+  /* くの字の表示設定 */
+  content: "";
+  margin: auto;
+  position: absolute;
+  top: 60px;
+  left: 25px;
+  width: 14px;
+  height: 14px;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(225deg);
+  /* 角度調整 */
+}
+header div {
+  position: relative;
+}
+header div::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/header_icon_search.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  top: 6px;
+  left: 8px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+}
+header #search {
+  padding-left: 40px;
+  width: 250px;
+  height: 40px;
+  background: #fff;
+  border-radius: 10px;
+  font-size: 1.4rem;
+  color: #B8DCEF;
+  letter-spacing: 0.4rem;
+}
+header #search::-moz-placeholder {
+  color: #B8DCEF;
+}
+header #search:-ms-input-placeholder {
+  color: #B8DCEF;
+}
+header #search::placeholder {
+  color: #B8DCEF;
+}
+header #notification {
+  background: url("../img/header_icon_notification.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  margin-left: 25px;
+}
+header #message {
+  background-image: url("../img/header_icon_message.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  width: 30px;
+  height: 30px;
+  margin-left: 17px;
+}
+header .notifications {
+  position: relative;
+}
+header .notifications__on::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  background: #FFCBDC;
+  border-radius: 50%;
+  top: 0;
+  right: 2px;
+}
+
+footer {
+  background: #b8dcef;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 36px 0;
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  bottom: 0;
+  color: #fff;
+}
+
+footer a{
+  color: #fff;
+}
+
+footer #cart {
+  width: 275px;
+  height: 40px;
+  border-radius: 10px;
+  background: #fff;
+}
+footer .footer__icons--navi {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+}
+footer .footer__icons--navi p {
+  font-size: 1rem;
+}
+footer .footer__icons--navi .footer__home::before {
+  content: "";
+  background-image: url("../img/footer_icon_home.png");
+  background-position: center center;
+  background-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 10px 15px 3px;
+  position: relative;
+  display: block;
+  z-index: 100;
+}
+footer .footer__icons--navi .footer__search::before {
+  content: "";
+  background-image: url("../img/footer_icon_search.png");
+  background-position: center center;
+  background-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 10px 15px 3px;
+  position: relative;
+  display: block;
+  z-index: 100;
+}
+footer .footer__icons--navi .footer__exhibit::before {
+  content: "";
+  background-image: url("../img/footer_icon_camera.png");
+  background-position: center center;
+  background-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 10px 15px 3px;
+  position: relative;
+  display: block;
+  z-index: 100;
+}
+footer .footer__icons--navi .footer__watch::before {
+  content: "";
+  background-image: url("../img/footer_icon_watch.png");
+  background-position: center center;
+  background-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 10px 15px 3px;
+  position: relative;
+  display: block;
+  z-index: 100;
+}
+footer .footer__icons--navi .footer__mypage::before {
+  content: "";
+  background-image: url("../img/footer_icon_mypage.png");
+  background-position: center center;
+  background-size: 18px;
+  width: 20px;
+  height: 20px;
+  margin: 10px 15px 3px;
+  position: relative;
+  display: block;
+  z-index: 100;
+}/*# sourceMappingURL=sm_temp.css.map */

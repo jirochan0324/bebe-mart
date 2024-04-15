@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@5.0.2/dist/ress.min.css">
+  <link rel="stylesheet" href="css/sm_temp.css">
+  <link rel="stylesheet" href="css/sm_delivery.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <p><a href="#" class="product__detail">商品の情報を入力</a></p>
+  </header>
+  <main>
+    <div class="product__image--wrap">
+      <div class="image__wrap--slider">
+        <label for="product__image1" class="product__image"></label>
+        <input type="file" id="product__image1">
+
+        <label for="product__image2" class="product__image"></label>
+        <input type="file" id="product__image2">
+
+        <label for="product__image3" class="product__image"></label>
+        <input type="file" id="product__image3">
+
+        <label for="product__image4" class="product__image"></label>
+        <input type="file" id="product__image4">
+      </div>
+    </div>
+    <div class="product__explain--wrap">
+      <div class="explain__genres">
+        <h2>商品の情報</h2>
+        <div class="explain__flex required">
+          <h3>カテゴリー</h3>
+        </div>
+        <div class="explain__flex required">
+          <h3>商品の状態</h3>
+        </div>
+        <div class="explain__flex required">
+          <h3>対象年齢</h3>
+        </div>
+        <div class="explain__flex not_required">
+          <h3>使用期間</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="product__title--wrap">
+      <h2>商品名と説明</h2>
+      <label for="product__title" class="input__label input__required">商品名</label>
+      <input type="text" id="product__title" placeholder="べべまーと">
+
+      <label for="product__explain" class="input__label input__required">商品詳細</label>
+      <textarea id="product__explain" cols="30" rows="10" placeholder="色　サイズ　商品状態　注意点"></textarea>
+    </div>
+
+  </main>
+
+  <footer>
+    <a href="sm.html" class="home_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__home">ホーム</p>
+      </div>
+    </a>
+    <a href="product_list.html" class="search_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__search">検索</p>
+      </div>
+    </a>
+    <a href="sm_delivery.html" class="exhibit_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__exhibit">出品</p>
+      </div>
+    </a>
+    <a href="#" class="watch_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__watch">ウォッチ</p>
+      </div>
+    </a>
+    <a href="mypage.html" class="mypage_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__mypage">マイページ</p>
+      </div>
+    </a>
+  </footer>
+
+  <script src="js/sm_product.js"></script>
+
+</body>
+
+</html>

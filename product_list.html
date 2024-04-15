@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ja"> 
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=100px,initial-scale=1.0,minimum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="ここに説明文を設定">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@twitteraccount">
+    <meta property="og:site_name" content="サイト名">
+    <meta property="og:title" content="サイトタイトル">
+    <meta property="og:description" content="サイト説明文">
+    <meta property="og:url" content="https://www.hogehoge.com">
+    <meta property="og:image" content="https://www.hogehoge.com./hoge.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="400">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="http://www.hoge.hoge/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="http://www.hoge.hoge/logo.png">
+    <link rel="stylesheet" href="ress.css">
+    <link rel="stylesheet" href="css/product_list.css">
+  </head>
+  <body> 
+    <header>
+      <div><input type="text" name="" id="search" placeholder="キーワードで探す"></div>
+      <button id="notification" class="notifications notifications__on"></button>
+      <button id="message" class="notifications"></button>  
+    </header>
+    <main>
+      <!-- ここからsm.htmlからコピー -->
+      <div class="main__search--display" id="search_display" style="display: none;">
+        <!-- こいつがオンになった時(=検索画面が出現した時、
+          bodyにoverflow: hiddenをつけるようにJsで操作する) -->
+        <div class="search__category--wrap">
+          <p>カテゴリから探す</p>
+          <p>メーカーから探す</p>
+        </div>
+        <div class="search__keyword--wrap">
+          <div class="keyword__flexMenu">
+            <h2>急上昇ワード</h2>
+            <p><a href="">もっと見る</a></p>
+          </div>
+          <div class="keyword__select--wrap">
+            <p>A型・ベビーカー</p>
+            <p>B型・ベビーカー</p>
+            <p>ベビーベット キャスター付き</p>
+            <p>2歳 知育玩具</p>
+            <p>離乳食 食器</p>
+          </div>
+          <div class="search__history--wrap">
+            <h2>検索履歴</h2>
+            <p>ベビーカー チャイルドシート</p>
+            <p>A型・ベビーカー</p>
+            <p>ベビーベット キャスター付き</p>
+          </div>
+        </div>
+      </div>
+      <!-- ここまでsm.htmlからコピー -->
+      <div class="drum">
+        <div class="flex-wrap">
+          <div class="product_state_wrap product_drum_wrap">
+            <select name="" class="product_state">
+              <option value="" selected>商品状態</option>
+              <option value="1">A</option>
+              <option value="2">B</option>
+              <option value="3">C</option>
+            </select>
+          </div>
+          <div class="product_size_wrap product_drum_wrap">
+            <select name="" class="product_size">
+              <option value="" selected>サイズ</option>
+              <option value="1">小</option>
+              <option value="2">中</option>
+              <option value="3">大</option>
+            </select>
+          </div>
+          <div class="product_period_wrap product_drum_wrap">
+            <select name="" class="product_period">
+              <option value="" selected>使用期間</option>
+              <option value="1">未使用</option>
+              <option value="2">半年未満</option>
+              <option value="3">半年以上</option>
+              <option value="4">1年以上</option>
+              <option value="5">2年以上</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="price_assort">
+        <select name="" class="price_assort_select">
+          <option value="" selected>価格の安い順</option>
+          <option value="1">価格の高い順</option>
+        </select>
+      </div>
+      <div class="flex-wrap length-wrap-one">
+        <a href="#" class="item-wrap">
+          <div class="box_one">
+            <div class="img_box img_one"></div>
+            <p class="item_name">A型ベビーカー</p>
+            <p class="item_genre">ベビーカー</p>
+            <p class="item_price">¥<span>8,000</span></p>
+          </div>
+        </a>
+        <a href="#" class="item-wrap">
+          <div class="box_two">
+            <div class="img_box img_two"></div>
+            <p class="item_name">チャイルドシート</p>
+            <p class="item_genre">チャイルドシート</p>
+            <p class="item_price">¥<span>8,000</span></p>
+          </div>
+        </a>
+        <a href="#" class="item-wrap">
+          <div class="box_three">
+            <div class="img_box img_three"></div>
+            <p class="item_name">ベビーキャリー</p>
+            <p class="item_genre">ベビーキャリー</p>
+            <p class="item_price">¥<span>4,150</span></p>
+          </div>
+        </a>
+      </div>
+      <div class="flex-wrap length-wrap-two">
+        <a href="#" class="item-wrap">
+          <div class="box_one">
+            <div class="img_box img_four"></div>
+            <p class="item_name">形パズル...</p>
+            <p class="item_genre">玩具</p>
+            <p class="item_price">¥<span>1,120</span></p>
+          </div>
+        </a>
+        <a href="#" class="item-wrap">
+          <div class="box_two">
+            <div class="img_box img_one"></div>
+            <p class="item_name">B型ベビーカー</p>
+            <p class="item_genre">ベビーカー</p>
+            <p class="item_price">¥<span>8,000</span></p>
+          </div>
+        </a>
+        <a href="#" class="item-wrap">
+          <div class="box_three">
+            <div class="img_box img_two"></div>
+            <p class="item_name">ベビーキャリー</p>
+            <p class="item_genre">ベビーキャリー</p>
+            <p class="item_price">¥<span>4,150</span></p>
+          </div>
+        </a>
+      </div>
+      <div class="flex-wrap length-wrap-three">
+        <a href="#" class="item-wrap">
+          <div class="box_one">
+            <div class="img_box img_three"></div>
+            <p class="item_name">D型ベビーカー</p>
+            <p class="item_genre">ベビーカー</p>
+            <p class="item_price">¥<span>8,000</span></p>
+          </div>
+        </a>
+        <a href="#" class="item-wrap">
+          <div class="box_two">
+            <div class="img_box img_four"></div>
+            <p class="item_name">チャイルドシート</p>
+            <p class="item_genre">チャイルドシート</p>
+            <p class="item_price">¥<span>8,000</span></p>
+          </div>
+        </a>
+        <a href="#" class="item-wrap">
+          <div class="box_three">
+            <div class="img_box img_one"></div>
+            <p class="item_name">C型ベビーカー</p>
+            <p class="item_genre">ベビーカー</p>
+            <p class="item_price">¥<span>8,000</span></p>
+          </div>
+        </a>
+      </div>
+      <div class="flex-wrap item_wrap_last">
+        <a href="#" class="item-wrap">
+          <div class="box_one">
+            <div class="img_box img_two"></div>
+            <p class="item_name">A型ベビーカー</p>
+            <p class="item_genre">ベビーカー</p>
+            <p class="item_price">¥<span>8,000</span></p>
+          </div>
+        </a>
+        <a href="#" class="item-wrap">
+          <div class="box_two">
+            <div class="img_box img_three"></div>
+            <p class="item_name">チャイルドシート</p>
+            <p class="item_genre">チャイルドシート</p>
+            <p class="item_price">¥<span>8,000</span></p>
+          </div>
+        </a>
+        <a href="#" class="item-wrap">
+          <div class="box_three">
+            <div class="img_box img_four"></div>
+            <p class="item_name">ベビーキャリー</p>
+            <p class="item_genre">ベビーキャリー</p>
+            <p class="item_price">¥<span>4,150</span></p>
+          </div>
+        </a>
+        
+      </div>
+    </main>
+    <!-- ここからsm.htmlからコピー -->
+    <footer>
+      <a href="sm.html" class="home_btn">
+        <div class="footer__icons--navi">
+          <p class="footer__home">ホーム</p>
+        </div>
+      </a>
+      <a href="product_list.html" class="search_btn">
+        <div class="footer__icons--navi">
+          <p class="footer__search">検索</p>
+        </div>
+      </a>
+      <a href="sm_delivery.html" class="exhibit_btn">
+        <div class="footer__icons--navi">
+          <p class="footer__exhibit">出品</p>
+        </div>
+      </a>
+      <a href="#" class="watch_btn">
+        <div class="footer__icons--navi">
+          <p class="footer__watch">ウォッチ</p>
+        </div>
+      </a>
+      <a href="mypage.html" class="mypage_btn">
+        <div class="footer__icons--navi">
+          <p class="footer__mypage">マイページ</p>
+        </div>
+      </a>
+    </footer>
+      <!-- ここまでsm.htmlからコピー -->
+    <script src="js/sm.js"></script>
+  </body>
+</html>

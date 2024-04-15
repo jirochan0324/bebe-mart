@@ -1,0 +1,161 @@
+@charset "UTF-8";
+body {
+  background: #fff;
+}
+
+main .product__image--wrap {
+  width: 100%;
+  height: 160px;
+  margin-top: 100px;
+  border: solid 1px transparent;
+  border-bottom: 1.5px solid #cacaca;
+}
+main .product__image--wrap .image__wrap--slider {
+  width: 370px;
+  height: 80px;
+  margin: 40px 0 0 auto;
+  overflow-x: scroll;
+  display: flex;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+main .product__image--wrap .image__wrap--slider .product__image {
+  display: block;
+  width: 78px;
+  height: 78px;
+  position: relative;
+  border-radius: 5px;
+  background: #efefef;
+}
+main .product__image--wrap .image__wrap--slider .product__image:first-child::after {
+  content: "";
+  width: 26px;
+  height: 43px;
+  display: block;
+  position: absolute;
+  background: url("../img/Group 124.png") center center;
+  background-size: 100% 100%;
+  inset: 0;
+  margin: auto;
+}
+main .product__image--wrap .image__wrap--slider .product__image::before {
+  content: "1";
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  border-radius: 6px 0 0 0;
+  background: #aaa;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2;
+}
+main .product__image--wrap .image__wrap--slider .product__image:nth-of-type(2)::before {
+  content: "2";
+}
+main .product__image--wrap .image__wrap--slider .product__image:nth-of-type(3)::before {
+  content: "3";
+}
+main .product__image--wrap .image__wrap--slider .product__image:nth-of-type(4)::before {
+  content: "4";
+}
+main .product__image--wrap .image__wrap--slider input[type=file] {
+  display: none;
+}
+main .product__explain--wrap {
+  height: 295px;
+  padding: 30px 20px;
+}
+main .product__explain--wrap .explain__genres h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2;
+  border-bottom: 0.8px solid #cacaca;
+}
+main .product__explain--wrap .explain__genres .explain__flex {
+  position: relative;
+}
+main .product__explain--wrap .explain__genres .explain__flex h3 {
+  font-size: 1.4rem;
+  font-weight: lighter;
+  line-height: 3;
+  border-bottom: 0.8px solid rgba(202, 202, 202, 0.7921568627);
+}
+main .product__explain--wrap .explain__genres .explain__flex.required::after {
+  content: "必須";
+  color: #ea7c7c;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 1.2rem;
+}
+main .product__explain--wrap .explain__genres .explain__flex.not_required::after {
+  content: "任意";
+  color: #5c5c5c;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  font-size: 1.2rem;
+}
+main .product__title--wrap {
+  padding: 0 20px 100px;
+}
+main .product__title--wrap h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+main .product__title--wrap .input__label {
+  font-size: 1.4rem;
+  position: relative;
+}
+main .product__title--wrap .input__label::after {
+  content: "必須";
+  color: #ea7c7c;
+  position: absolute;
+  top: 2px;
+  right: -35px;
+  font-size: 1.2rem;
+}
+main .product__title--wrap #product__title {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  margin: 6px 0 30px;
+  font-size: 1.4rem;
+  padding: 12px 10px;
+}
+main .product__title--wrap #product__title::-moz-placeholder {
+  font-size: 1.4rem;
+}
+main .product__title--wrap #product__title:-ms-input-placeholder {
+  font-size: 1.4rem;
+}
+main .product__title--wrap #product__title::placeholder {
+  font-size: 1.4rem;
+}
+main .product__title--wrap #product__title:focus {
+  outline: 2px #ea7c7c solid;
+}
+main .product__title--wrap #product__explain {
+  width: 100%;
+  height: 170px;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  margin: 6px 0 30px;
+  font-size: 1.4rem;
+  padding: 12px 10px;
+}
+main .product__title--wrap #product__explain::-moz-placeholder {
+  font-size: 1.4rem;
+}
+main .product__title--wrap #product__explain:-ms-input-placeholder {
+  font-size: 1.4rem;
+}
+main .product__title--wrap #product__explain::placeholder {
+  font-size: 1.4rem;
+}
+main .product__title--wrap #product__explain:focus {
+  outline: 2px #ea7c7c solid;
+}/*# sourceMappingURL=sm_delivery.css.map */

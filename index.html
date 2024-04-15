@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/ress@5.0.2/dist/ress.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
+</head>
+
+<body>
+  <div class="loginForm">
+    <h1>ココにロゴが入ります</h1>
+    <h2 id="title">ログイン</h2>
+
+    <div class="stepSlide">
+      <div class="step1">
+        <p>お客様の○○アカウントを使用します。</p>
+        <div class="form">
+          <input id="mail" name type="email">
+          <label class="placeholder" for="mail">メールアドレス</label>
+          <a href="#">メールアドレスを忘れた場合</a>
+          <p>◯◯アカウントをお持ちでない場合は新しくアカウントを作成してください。</p>
+          <div class="buttonFlex">
+            <a href="#">アカウントを作成</a>
+            <input id="button1" type="button" value="次へ">
+          </div>
+        </div>
+      </div>
+
+      <div class="step2">
+        <p>続行するにはパスワードを入力してください。</p>
+        <div class="form">
+          <input id="pass" name type="password">
+          <label class="placeholder" for="pass">パスワードを入力</label>
+          <input id="visible" name type="checkbox">
+          <label class="set" for="visible">パスワードを表示する</label>
+          <p>◯◯アカウントをお持ちでない場合は新しくアカウントを作成してください。</p>
+          <div class="buttonFlex">
+            <a href="#">アカウントを作成</a>
+            <input id="button2" type="button" value="次へ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p id="userName"></p>
+  <!-- <input type="password" name="" id="pass"><br> -->
+  <script src="js/index.js"></script>
+</body>
+
+</html>

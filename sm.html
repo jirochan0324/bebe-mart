@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@5.0.2/dist/ress.min.css">
+  <link rel="stylesheet" href="css/sm_temp.css">
+  <link rel="stylesheet" href="css/sm.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <div><input type="text" name="" id="search" placeholder="キーワードで探す"></div>
+    <button id="notification" class="notifications notifications__on"></button>
+    <button id="message" class="notifications"></button>
+  </header>
+  <main>
+    <div class="main__search--display" id="search_display" style="display: none;">
+      <!-- こいつがオンになった時(=検索画面が出現した時、
+        bodyにoverflow: hiddenをつけるようにJsで操作する) -->
+      <div class="search__category--wrap">
+        <p>カテゴリから探す</p>
+        <p>メーカーから探す</p>
+      </div>
+      <div class="search__keyword--wrap">
+        <div class="keyword__flexMenu">
+          <h2>急上昇ワード</h2>
+          <p><a href="">もっと見る</a></p>
+        </div>
+        <div class="keyword__select--wrap">
+          <p>A型・ベビーカー</p>
+          <p>B型・ベビーカー</p>
+          <p>ベビーベット キャスター付き</p>
+          <p>2歳 知育玩具</p>
+          <p>離乳食 食器</p>
+        </div>
+        <div class="search__history--wrap">
+          <h2>検索履歴</h2>
+          <p>ベビーカー チャイルドシート</p>
+          <p>A型・ベビーカー</p>
+          <p>ベビーベット キャスター付き</p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <ul class="slider">
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_02.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_03.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_04.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_05.jpg" alt=""></li>
+      <li><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_06.jpg" alt=""></li>
+      <!--/slider-->
+    </ul>
+
+    <div class="main__category--wrap">
+      <h2>商品カテゴリーで探す</h2>
+      <div class="category__flex">
+        <p><a href="#">おもちゃ</a></p>
+        <p><a href="#">おでかけ</a></p>
+        <p><a href="#">寝装・寝具</a></p>
+        <p><a href="#">マタニティ・ママグッズ</a></p>
+        <p><a href="#">家具</a></p>
+        <p><a href="#">キッチン備品</a></p>
+      </div>
+    </div>
+
+    <div class="main__history--area">
+      <div class="main__area--flexMenu">
+        <h2>閲覧履歴</h2>
+        <p class="flexMenu__more"><a href="#!">もっと見る</a></p>
+      </div>
+      <div class="main__history--slider">
+        <div class="main__item">
+          <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+              alt="">
+          </figure>
+          <div class="item__explanation">
+            <h3 class="item__name">お洋服</h3>
+            <p class="item__price">1,620</p>
+          </div>
+        </div>
+        <div class="main__item">
+          <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+              alt="">
+          </figure>
+          <div class="item__explanation">
+            <h3 class="item__name">お洋服</h3>
+            <p class="item__price">1,620</p>
+          </div>
+        </div>
+        <div class="main__item">
+          <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+              alt="">
+          </figure>
+          <div class="item__explanation">
+            <h3 class="item__name">お洋服</h3>
+            <p class="item__price">1,620</p>
+          </div>
+        </div>
+        <div class="main__item">
+          <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+              alt="">
+          </figure>
+          <div class="item__explanation">
+            <h3 class="item__name">お洋服</h3>
+            <p class="item__price">1,620</p>
+          </div>
+        </div>
+        <div class="main__item">
+          <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+              alt="">
+          </figure>
+          <div class="item__explanation">
+            <h3 class="item__name">お洋服</h3>
+            <p class="item__price">1,620</p>
+          </div>
+        </div>
+        <div class="main__item">
+          <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+              alt="">
+          </figure>
+          <div class="item__explanation">
+            <h3 class="item__name">お洋服</h3>
+            <p class="item__price">1,620</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main__popular--items">
+      <h2>チェックしたカテゴリーの人気アイテム</h2>
+      <div class="main__area--flexMenu">
+        <p class="flexMenu__title">ベビーカー</p>
+        <p class="flexMenu__more"><a href="#!">もっと見る</a></p>
+      </div>
+      <div class="popular__items--area">
+        <div class="items__area--slider">
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="main__popular--items">
+      <h2>年齢別商品ランキング</h2>
+      <div class="main__area--flexMenu">
+        <p class="flexMenu__title">0歳〜2歳</p>
+        <p class="flexMenu__more"><a href="#!">もっと見る</a></p>
+      </div>
+      <div class="popular__items--area">
+        <div class="items__area--slider">
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+          <div class="main__item">
+            <figure><img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-7/img/img_01.jpg"
+                alt="">
+            </figure>
+            <div class="item__explanation">
+              <h3 class="item__name">お洋服</h3>
+              <p class="item__price">1,620</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer>
+    <a href="sm.html" class="home_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__home">ホーム</p>
+      </div>
+    </a>
+    <a href="product_list.html" class="search_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__search">検索</p>
+      </div>
+    </a>
+    <a href="sm_delivery.html" class="exhibit_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__exhibit">出品</p>
+      </div>
+    </a>
+    <a href="#" class="watch_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__watch">ウォッチ</p>
+      </div>
+    </a>
+    <a href="mypage.html" class="mypage_btn">
+      <div class="footer__icons--navi">
+        <p class="footer__mypage">マイページ</p>
+      </div>
+    </a>
+  </footer>
+
+
+
+  <script src="js/sm.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $('.slider').slick({
+      autoplay: true, //自動的に動き出すか。初期値はfalse。
+      infinite: true, //スライドをループさせるかどうか。初期値はtrue。
+      speed: 500, //スライドのスピード。初期値は300。
+      slidesToShow: 3, //スライドを画面に3枚見せる
+      slidesToScroll: 1, //1回のスクロールで1枚の写真を移動して見せる
+      prevArrow: '<div class="slick-prev"></div>', //矢印部分PreviewのHTMLを変更
+      nextArrow: '<div class="slick-next"></div>', //矢印部分NextのHTMLを変更
+      centerMode: true, //要素を中央ぞろえにする
+      variableWidth: true, //幅の違う画像の高さを揃えて表示
+      dots: true, //下部ドットナビゲーションの表示
+    });
+  </script>
+
+
+</body>
+
+</html>
